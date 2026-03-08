@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنك الإعراب الشامل - منصة نوفل</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #3b82f6;
+            --accent: #f59e0b;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, var(--primary), #334155);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+            color: #f8fafc;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #cbd5e1;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .print-btn {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .print-btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* Section Styles */
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid var(--secondary);
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* List Styles */
+        .exercise-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .exercise-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 15px;
+            border-bottom: 1px dashed var(--border);
+            transition: background-color 0.2s;
+            font-size: 1.1rem;
+        }
+
+        .exercise-list li:hover {
+            background-color: #f1f5f9;
+        }
+
+        .exercise-list li:last-child {
+            border-bottom: none;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            accent-color: var(--secondary);
+        }
+
+        .word-highlight {
+            color: #b91c1c;
+            font-weight: bold;
+            font-size: 1.15rem;
+        }
+
+        .sentence-highlight {
+            color: #1d4ed8;
+            font-weight: bold;
+            font-size: 1.15rem;
+        }
+
+        .note-box {
+            background-color: #fffbeb;
+            border-right: 4px solid var(--accent);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        @media print {
+            .print-btn { display: none; }
+            body { background-color: white; }
+            .section-card { box-shadow: none; border: 1px solid #ccc; page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>بنك الإعراب الشامل</h1>
+            <p>منصة نوفل التعليمية - أقوى تجميعية لأسئلة الإعراب للمراجعة النهائية</p>
+        </div>
+
+        <div class="controls">
+            <button class="print-btn" onclick="window.print()">🖨️ طباعة السلسلة (PDF)</button>
+        </div>
+
+        <div class="note-box">
+            <strong>تعليمات هامة للطالب:</strong> 
+            في قسم "إعراب الجمل"، لم نقم بتحديد ما إذا كانت الجملة لها محل من الإعراب أم لا. مهمتك هي اكتشاف ذلك بنفسك بناءً على القواعد والمكتسبات القبلية التي درستها.
+        </div>
+
+        <div class="section-card">
+            <h2 class="section-title">📌 القسم الأول: إعراب المفردات (ثوابت البكالوريا)</h2>
+            <p>أعرب الكلمات الملونة بالأحمر إعراباً تاماً:</p>
+            <ul class="exercise-list">
+                <li><input type="checkbox"> <label>1. يا أيها <span class="word-highlight">الشبابُ</span>، إن المستقبل بين أيديكم.</label></li>
+                <li><input type="checkbox"> <label>2. تطورت الجزائر <span class="word-highlight">اقتصاداً</span> في السنوات الأخيرة.</label></li>
+                <li><input type="checkbox"> <label>3. إنّ هذا <span class="word-highlight">الوطنَ</span> أمانة في أعناقنا.</label></li>
+                <li><input type="checkbox"> <label>4. كفى باللهِ <span class="word-highlight">شهيداً</span> على ما نقول.</label></li>
+                <li><input type="checkbox"> <label>5. رجع الفدائيون من المعركة <span class="word-highlight">منتصرين</span>.</label></li>
+                <li><input type="checkbox"> <label>6. أنا أكثرُ منك <span class="word-highlight">تجربةً</span> وأغزرُ علماً.</label></li>
+                <li><input type="checkbox"> <label>7. أعجبني الأستاذُ <span class="word-highlight">شرحُهُ</span> للدرس.</label></li>
+                <li><input type="checkbox"> <label>8. لله درّهُ <span class="word-highlight">فارساً</span> مغواراً!</label></li>
+                <li><input type="checkbox"> <label>9. ما أجملَ السماءَ <span class="word-highlight">لوناً</span> في فصل الربيع.</label></li>
+                <li><input type="checkbox"> <label>10. قرأتُ الكتابَ <span class="word-highlight">نصفَهُ</span> البارحة.</label></li>
+                <li><input type="checkbox"> <label>11. زرع الفلاح هكتاراً <span class="word-highlight">قمحاً</span>.</label></li>
+                <li><input type="checkbox"> <label>12. هؤلاء <span class="word-highlight">الأبطالُ</span> هم صناع المجد.</label></li>
+                <li><input type="checkbox"> <label>13. بئس <span class="word-highlight">صفةً</span> الخيانة.</label></li>
+                <li><input type="checkbox"> <label>14. امتلأ قلب المؤمن <span class="word-highlight">يقيناً</span>.</label></li>
+                <li><input type="checkbox"> <label>15. جاء القائدُ <span class="word-highlight">عمرُ</span> متفقداً الرعية.</label></li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2 class="section-title">📌 القسم الثاني: إعراب الجمل (تحدي الاكتشاف)</h2>
+            <p>بيّن المحل الإعرابي للجمل الواقعة بين قوسين، أو اذكر سبب عدم وجود محل لها:</p>
+            <ul class="exercise-list">
+                <li><input type="checkbox"> <label>1. <span class="sentence-highlight">(إنّ البكالوريا قريبة)</span>، فاستعدوا لها جيداً.</label></li>
+                <li><input type="checkbox"> <label>2. العلمُ <span class="sentence-highlight">(ينفعُ صاحبه)</span> في الدنيا والآخرة.</label></li>
+                <li><input type="checkbox"> <label>3. الطالبُ الذي <span class="sentence-highlight">(يجتهدُ اليوم)</span> سيرتاح غداً.</label></li>
+                <li><input type="checkbox"> <label>4. جاء البطلُ <span class="sentence-highlight">(يجرّ أذيال الهزيمة)</span>.</label></li>
+                <li><input type="checkbox"> <label>5. رأيتُ طفلاً <span class="sentence-highlight">(يبكي بحرقة)</span>.</label></li>
+                <li><input type="checkbox"> <label>6. قال مفدي زكرياء: <span class="sentence-highlight">(نحن ثرنا فحياة أو ممات)</span>.</label></li>
+                <li><input type="checkbox"> <label>7. واللهِ <span class="sentence-highlight">(لأنجحنّ في الامتحان)</span> رغم الصعاب.</label></li>
+                <li><input type="checkbox"> <label>8. لولا فضلُ الله <span class="sentence-highlight">(لهلكنا جميعاً)</span>.</label></li>
+                <li><input type="checkbox"> <label>9. الجزائر - <span class="sentence-highlight">(وهي قبلة الأحرار)</span> - لا تقبل الذل.</label></li>
+                <li><input type="checkbox"> <label>10. من يدرس بجدٍ <span class="sentence-highlight">(فسينجح بتفوق)</span>.</label></li>
+                <li><input type="checkbox"> <label>11. من يدرس بجدٍ <span class="sentence-highlight">(ينجح)</span>.</label></li>
+                <li><input type="checkbox"> <label>12. ظننتُ المعركةَ <span class="sentence-highlight">(قد انتهت)</span>.</label></li>
+                <li><input type="checkbox"> <label>13. إذا <span class="sentence-highlight">(جاء نصر الله والفتح)</span>.</label></li>
+                <li><input type="checkbox"> <label>14. أقبل الربيعُ <span class="sentence-highlight">(وهو يبتسم)</span>.</label></li>
+                <li><input type="checkbox"> <label>15. كاد المطرُ <span class="sentence-highlight">(يهطلُ بغزارة)</span>.</label></li>
+                <li><input type="checkbox"> <label>16. يومَ <span class="sentence-highlight">(ينفعُ الصادقين صدقهم)</span>.</label></li>
+                <li><input type="checkbox"> <label>17. جلستُ حيثُ <span class="sentence-highlight">(يجلسُ العلماء)</span>.</label></li>
+                <li><input type="checkbox"> <label>18. كنتُ <span class="sentence-highlight">(أراجع دروسي)</span> حين انقطع التيار.</label></li>
+                <li><input type="checkbox"> <label>19. سمعتُ العصفور <span class="sentence-highlight">(يغرد)</span>.</label></li>
+                <li><input type="checkbox"> <label>20. إن تجتهد فـ <span class="sentence-highlight">(أنت الفائز)</span>.</label></li>
+            </ul>
+        </div>
+
+        <div class="section-card">
+            <h2 class="section-title">📌 القسم الثالث: من أرشيف البكالوريا (تطبيقات نصوصية)</h2>
+            <p>أعرب ما تحته خط إعراب مفردات، وما بين قوسين إعراب جمل (مستوحى من نصوص سابقة):</p>
+            <ul class="exercise-list">
+                <li><input type="checkbox"> <label>1. "وكم من أمةٍ <span class="sentence-highlight">(بادت)</span> ولم يبقَ لها أثر."</label></li>
+                <li><input type="checkbox"> <label>2. "يا <span class="word-highlight">أيها</span> المارون بين الكلمات العابرة." (محمود درويش)</label></li>
+                <li><input type="checkbox"> <label>3. "وهل ينهض <span class="word-highlight">الوطنُ</span> إلا بشبابه؟"</label></li>
+                <li><input type="checkbox"> <label>4. "إذ <span class="sentence-highlight">(هم عليها قعود)</span>."</label></li>
+                <li><input type="checkbox"> <label>5. "إن <span class="word-highlight">هذا</span> العصرَ عصرُ علمٍ وعمل."</label></li>
+                <li><input type="checkbox"> <label>6. "لقد أسمعتَ <span class="sentence-highlight">(لو ناديت حياً)</span>."</label></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
